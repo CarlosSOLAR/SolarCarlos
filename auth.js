@@ -24,15 +24,15 @@ export function login(email, senha, lembrar) {
   signInWithEmailAndPassword(auth, email, senha)
     .then((userCredential) => {
       const user = userCredential.user;
-      
+
       if (lembrar) {
         localStorage.setItem('user', JSON.stringify(user));
       } else {
         sessionStorage.setItem('user', JSON.stringify(user));
       }
 
-      // Redirecionar para painel após login
-      window.location.href = "dashboard.html"; // ajuste para onde quer ir após login
+      // Redireciona para o painel
+      window.location.href = "dashboard.html";
     })
     .catch((error) => {
       tentativasRestantes--;
@@ -41,7 +41,7 @@ export function login(email, senha, lembrar) {
 
       if (tentativasRestantes <= 0) {
         alert("Número máximo de tentativas excedido. Tente novamente mais tarde.");
-        document.getElementById('loginButton').disabled = true; // bloqueia botão de login
+        document.getElementById('loginButton').disabled = true;
       }
     });
 }
@@ -67,5 +67,5 @@ export function verificarLogin() {
 export function logout() {
   localStorage.removeItem('user');
   sessionStorage.removeItem('user');
-  window.location.href = "/login.html"; // voltar para página de login
+  window.location.href = "/login.html";
 }
