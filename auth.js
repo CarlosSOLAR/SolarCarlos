@@ -32,7 +32,7 @@ export function login(email, senha, lembrar) {
       }
 
       // Redirecionar para painel após login
-      window.location.href = "/dashboard.html"; // ajuste para onde quer ir após login
+      window.location.href = "dashboard.html"; // ajuste para onde quer ir após login
     })
     .catch((error) => {
       tentativasRestantes--;
