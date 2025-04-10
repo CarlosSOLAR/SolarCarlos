@@ -1,202 +1,117 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .login-body {
-    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    background: linear-gradient(135deg, #00b4d8, #0077b6); /* Gradiente azul */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .login-container {
     background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
     text-align: center;
-    width: 90%;
-    max-width: 350px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    width: 120px;
-    margin-bottom: 20px;
+    width: 150px;
+    margin-bottom: 1rem;
 }
 
 input[type="email"],
 input[type="password"] {
     width: 100%;
-    padding: 10px;
-    margin: 8px 0;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #0077b6;
-    color: white;
-    padding: 10px;
     width: 100%;
+    padding: 0.8rem;
+    background-color: #0077b6; /* Azul botão */
+    color: #ffffff;
     border: none;
-    margin-top: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #023e8a;
+    background-color: #023e8a; /* Azul escuro no hover */
 }
 
 .error-message {
     color: red;
-    font-size: 14px;
     margin-top: 10px;
 }
-/*/ style page login
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #333333;
 }
 
-/* Estilo da página de login */
-body.login-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #0d47a1, #1976d2);
-  font-family: 'Arial', sans-serif;
+a {
+    text-decoration: none;
+    color: #0077b6; /* Cor de links */
 }
 
-.login-container {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  text-align: center;
+a:hover {
+    text-decoration: underline;
 }
 
-.login-container h1 {
-  margin-bottom: 1.5rem;
-  color: #0d47a1;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 0.8rem;
-  margin: 0.5rem 0;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-}
-
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin: 0.5rem 0;
-}
-
-.checkbox-container label {
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
-}
-
-button {
-  width: 100%;
-  padding: 0.8rem;
-  margin-top: 1rem;
-  background-color: #0d47a1;
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #1565c0;
-}
-
-.link-button {
-  background: none;
-  color: #0d47a1;
-  text-decoration: underline;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-
-/* Estilo para o Dashboard em formato App */
-.dashboard-body {
-    background: linear-gradient(to right, #f0f4f7, #d9e4f5);
-    margin: 0;
-    min-height: 100vh;
+/* Estilo para a tela inicial (index.html) */
+.index-body {
+    background: linear-gradient(135deg, #00b4d8, #0077b6); /* Gradiente azul */
     display: flex;
     justify-content: center;
-    align-items: start;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
+    align-items: center;
+    height: 100vh;
 }
 
-.dashboard-container {
-    width: 100%;
-    max-width: 1100px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.dashboard-header {
+.index-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
     text-align: center;
-    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dashboard-logo {
-    width: 100px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+.index-container h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #0d47a1; /* Título com azul escuro */
 }
 
-.dashboard-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
+.index-container p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555555;
 }
 
-.dashboard-card {
-    background: #3498db;
-    color: white;
-    border-radius: 12px;
-    padding: 20px 10px;
-    text-align: center;
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #0077b6; /* Azul botão */
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
     text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
+    transition: background-color 0.3s;
 }
 
-.dashboard-card:hover {
-    background: #2980b9;
-    transform: scale(1.05);
-}
-
-.dashboard-card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.dashboard-card span {
-    display: block;
-    font-size: 16px;
-    margin-top: 5px;
+.btn:hover {
+    background-color: #023e8a; /* Azul escuro no hover */
 }
