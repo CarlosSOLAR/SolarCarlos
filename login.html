@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Solar PMOC</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h1>Solar PMOC</h1>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="E-mail" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      <div class="checkbox-container">
+        <input type="checkbox" id="lembrar">
+        <label for="lembrar">Lembrar-me</label>
+      </div>
+      <button type="button" id="loginButton">Entrar</button>
+      <button type="button" id="recuperarSenhaButton" class="link-button">Esqueceu a senha?</button>
+    </form>
+  </div>
+
+  <script type="module">
+    import { login, recuperarSenha } from "../js/auth.js";
+
+    document.getElementById('loginButton').addEventListener('click', () => {
+      const email = document.getElementById('email').value.trim();
+      const senha = document.getElementById('senha').value.trim();
+      const lembrar = document.getElementById('lembrar').checked;
+
+      if (email && senha) {
+        login(email, senha, lembrar);
+      } else {
+        alert("Por favor, preencha todos os campos!");
+      }
+    });
+
+    document.getElementById('recuperarSenhaButton').addEventListener('click', () => {
+      const email = document.getElementById('email').value.trim();
+
+      if (email) {
+        recuperarSenha(email);
+      } else {
+        alert("Digite seu e-mail para recuperar a senha.");
+      }
+    });
+  </script>
+</body>
+</html>

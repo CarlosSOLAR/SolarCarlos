@@ -1,0 +1,202 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-body {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/*/ style page login
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo da página de login */
+body.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 1.5rem;
+  color: #0d47a1;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0.5rem 0;
+}
+
+.checkbox-container label {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #0d47a1;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.link-button {
+  background: none;
+  color: #0d47a1;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Estilo para o Dashboard em formato App */
+.dashboard-body {
+    background: linear-gradient(to right, #f0f4f7, #d9e4f5);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1100px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-logo {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #3498db;
+    color: white;
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.dashboard-card:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.dashboard-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card span {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
