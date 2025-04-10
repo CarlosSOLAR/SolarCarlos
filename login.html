@@ -16,17 +16,13 @@
             <label>
                 <input type="checkbox" id="rememberMe"> Lembrar-me
             </label>
-            <button type="submit">Entrar</button>
+            <button type="submit" id="loginButton">Entrar</button>
             <p id="errorMsg" class="error-message"></p>
             <p><a href="#" id="resetPassword">Esqueci a senha</a></p>
         </form>
     </div>
 
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-
-    <!-- Seu JS -->
-    <script src="auth.js"></script>
+    <!-- Importação dos módulos -->
+    <script type="module" src="login.js"></script>
 </body>
 </html>
