@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Manutenção</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Seu CSS -->
 </head>
 <body class="login-body">
+
+
+
     <div class="login-container">
-        <img src="./img/logo.jpg" alt="Logo" class="logo">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Senha" required>
-            <label>
-                <input type="checkbox" id="rememberMe"> Lembrar-me
-            </label>
-            <button type="submit" id="loginButton">Entrar</button>
-            <p id="errorMsg" class="error-message"></p>
-            <p><a href="#" id="resetPassword">Esqueci a senha</a></p>
-        </form>
+        <!-- Logo adicionada aqui -->
+        <img src="./img/logo2.png" alt="Logo" class="logo-login">
+        <h2>Bem-vindo</h2>
+
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <button onclick="fazerLogin()">Entrar</button>
+
+        <p id="erro" class="error-message"></p>
     </div>
 
-    <!-- Importação dos módulos -->
-    <script type="module" src="login.js"></script>
+
+
+    <script src="script.js"></script> <!-- Agora o JS está separado -->
+
+
+
 </body>
 </html>
