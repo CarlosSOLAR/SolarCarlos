@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Manutenção</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Manutenção</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="dashboard-body">
-    <div class="dashboard-container">
-        <header class="dashboard-header">
-            <img src="../img/logo.jpg" alt="Logo" class="dashboard-logo">
-            <h1>Bem-vindo!</h1>
-            <p>Selecione uma opção</p>
-        </header>
-        <section class="dashboard-grid">
-            <a href="#" class="dashboard-card">
-                <img src="../img/clientes.png" alt="Clientes">
-                <span>Clientes</span>
-            </a>
-            <a href="#" class="dashboard-card">
-                <img src="../img/equipamentos.png" alt="Equipamentos">
-                <span>Equipamentos</span>
-            </a>
-            <a href="#" class="dashboard-card">
-                <img src="../img/servicos.png" alt="Serviços">
-                <span>Serviços</span>
-            </a>
-            <a href="#" class="dashboard-card">
-                <img src="../img/orcamentos.png" alt="Orçamentos">
-                <span>Orçamentos</span>
-            </a>
-            <a href="#" class="dashboard-card">
-                <img src="../img/pecas.png" alt="Peças">
-                <span>Peças</span>
-            </a>
-            <a href="#" class="dashboard-card">
-                <img src="../img/ferramentas.png" alt="Ferramentas">
-                <span>Ferramentas</span>
-            </a>
-            <a href="#" class="dashboard-card">
-                <img src="../img/planos.png" alt="Planos">
-                <span>Planos de Manutenção</span>
-            </a>
-            <a href="#" class="dashboard-card">
-                <img src="../img/relatorios.png" alt="Relatórios">
-                <span>Relatórios</span>
-            </a>
-        </section>
+
+  <header class="dashboard-header">
+    <img src="img/logo.png" alt="Logo" class="dashboard-logo">
+    <div class="dashboard-header-center">
+      <h1 class="dashboard-title">SOLAR MANUTENÇÃO</h1>
+      <p class="dashboard-datetime" id="datetime"></p> <!-- Data e Hora -->
     </div>
+    <button class="logout-button" title="Sair" onclick="logout()">
+      <img src="img/logout.svg" alt="Logout" class="logout-icon">
+    </button>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="dashboard-welcome">
+      <p class="dashboard-subtitle">Selecione uma opção</p>
+    </section>
+
+    <section class="dashboard-grid">
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/clientes.svg" alt="Clientes" class="dashboard-icon">
+          <span>Clientes</span>
+        </div>
+      </a>
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/equipamentos.svg" alt="Equipamentos" class="dashboard-icon">
+          <span>Equipamentos</span>
+        </div>
+      </a>
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/servicos.svg" alt="Serviços" class="dashboard-icon">
+          <span>Serviços</span>
+        </div>
+      </a>
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/orcamentos.svg" alt="Contas" class="dashboard-icon">
+          <span>Contas</span>
+        </div>
+      </a>
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/pecas.svg" alt="Almoxarifado" class="dashboard-icon">
+          <span>Almoxarifado</span>
+        </div>
+      </a>
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/ferramentas.svg" alt="Ferramentas" class="dashboard-icon">
+          <span>Ferramentas</span>
+        </div>
+      </a>
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/planos.svg" alt="Planos de Manutenção" class="dashboard-icon">
+          <span>Planos de Manutenção</span>
+        </div>
+      </a>
+      <a href="#" class="dashboard-card">
+        <div class="dashboard-card-content">
+          <img src="img/relatorios.svg" alt="Relatórios" class="dashboard-icon">
+          <span>Relatórios</span>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  
+  <script src="script.js"></script> <!-- Agora o JS está separado -->
+  
+
 </body>
 </html>
